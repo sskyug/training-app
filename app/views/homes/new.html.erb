@@ -1,0 +1,5 @@
+<%= form_with(model: @post, local: true) do |f| %>
+  <%= f.text_field :training_name %>
+  <%= f.text_area :detail %>
+  <%= f.submit "投稿" %>
+<% end %>

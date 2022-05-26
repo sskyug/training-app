@@ -1,0 +1,7 @@
+<%= render 'layouts/flash_messages' %>
+<% @posts.each do |post|%>
+  <li><%= post.created_at.strftime('%Y/%m/%d %H:%M:%S') %></li>
+  <ul><%= post.training_name %></ul>
+  <ul><%= post.detail %></ul>
+  <ul><%= post.user.email %></ul>
+<% end %>
