@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :to_root, except: [:index]
   def index
-    @posts = Post.all
+    @posts = Post.order("created_at DESC")
   end
 
   def new
